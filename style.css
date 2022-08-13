@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: currentColor;
+}
+.sign-in{
+    border: none;
+    outline: none;
+    margin: 20px 0 10px 20px;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card-container{
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 23px;
+    padding: 20px;
+}
+.card-container .card{
+    padding: 20px;
+    border: 1px solid black;
+    background-color: #fff;
+    height: 400px;
+}
+.card-container .card h1{
+    font-size: 40px;
+}
+.card-container .card span{
+    font-size: 30px;
+    font-weight: 700;
+}
+.card-container .card .name,.card-container .card .surname, .card-container .card .gender{
+    margin-top: 20px;
+    font-size: 25px;
+}
+.delete_card{
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.618);
+    color: #fff;
+    padding: 10px 18px;
+    cursor: pointer;
+}
+.modal-container{
+    background-color: rgba(0, 0, 0, 0.566);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 99999;
+    position: fixed;
+    transition: all 0.5s;
+}
+.modal-container.hide{
+    opacity: 0;
+    transform: scale(0.6);
+    pointer-events: none;
+    
+}
+.modal-container.show{
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: visible;
+
+}
+.modal-container .modal{
+    width: 300px;
+    background-color: #fff;
+    padding: 30px;
+}
+.modal-container .modal #form{
+
+}
+.close_div{
+    display: flex;
+    justify-content: end;
+}
+.close{
+    font-size: 28px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+.modal-container .modal #form h1{
+    margin-bottom: 15px;
+    
+}
+.modal-container .modal #form .name_div{
+    position: relative;
+    height: 50px;
+    margin-bottom: 15px;
+
+}
+.modal-container .modal #form .name_div #name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 16px;
+    border-radius: 7px;
+}
+.modal-container .modal #form .name_div label{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    color: rgba(128, 128, 128, 0.718);
+    transition: all 0.3s;
+}
+.modal-container .modal #form .name_div #name:focus + label{
+    top: -8px;
+    left: 10px;
+    font-size: 14px;
+    z-index: 99;
+    background-color: #fff;
+}
+.modal-container .modal #form .name_div #name:focus{
+    border: 2px solid dodgerblue;
+}
+#name:not(:placeholder-shown)#name:not(:focus) + label{
+    top: -8px;
+    left: 10px;
+    font-size: 14px;
+    z-index: 99;
+    background-color: #fff;
+
+}
+
+
+
+
+.modal-container .modal #form .surname_div{
+    position: relative;
+    height: 50px;
+    margin-bottom: 15px;
+}
+.modal-container .modal #form .surname_div #surname{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 16px;
+    border-radius: 7px;
+}
+.modal-container .modal #form .surname_div label{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    color: rgba(128, 128, 128, 0.718);
+    transition: all 0.3s;
+}
+.modal-container .modal #form .surname_div #surname:focus + label{
+    top: -8px;
+    left: 10px;
+    font-size: 14px;
+    z-index: 99;
+    background-color: #fff;
+}
+.modal-container .modal #form .surname_div #surname:focus{
+    border: 2px solid dodgerblue;
+}
+#surname:not(:placeholder-shown)#surname:not(:focus) + label{
+    top: -8px;
+    left: 10px;
+    font-size: 14px;
+    z-index: 99;
+    background-color: #fff;
+}
+
+
+
+
+
+.modal-container .modal #form .gender_one_div{
+
+}
+.modal-container .modal #form .gender_one_div #male{
+
+}
+.modal-container .modal #form .gender_one_div label{
+
+}
+.modal-container .modal #form .gender_two_div {
+
+}
+.modal-container .modal #form .gender_two_div #female{
+
+}
+.modal-container .modal #form .gender_two_div label{
+
+}
+.modal-container .modal #form .submit{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+.modal-container .modal #form .submit .submit_button{
+    border: none;
+    background-color: blue;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.story_div, .title_div{
+    height: 30px;
+}
+.title_div{
+    margin-top: 9px;
+    margin-bottom: 42px;
+    border-top: 1px solid black;
+}
+#title,#story{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+.title span,.story span{
+    font-size: 30px;
+}
+.title, .story{
+    font-size: 25px;
+}

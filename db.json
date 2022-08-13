@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Elvin",
+      "surname": "Isazade",
+      "gender": "male",
+      "title": "This is title of my story",
+      "story": "This is my story",
+      "age": 23
+    },
+    {
+      "id": 2,
+      "name": "Cavid",
+      "surname": "Isazade",
+      "gender": "male",
+      "title": "Oxford",
+      "story": "i graduated from Oxford",
+      "age": 28
+    },
+    {
+      "id": 3,
+      "name": "Nil",
+      "surname": "Isayeva",
+      "gender": "male",
+      "title": "Harvard",
+      "story": "i graduated from Harvard",
+      "age": 20
+    },
+    {
+      "id": 4,
+      "name": "Jale",
+      "surname": "Abdullabeyli",
+      "gender": "female",
+      "title": "BDu",
+      "story": "i graduated from BDU",
+      "age": 24
+    }
+  ]
+}
